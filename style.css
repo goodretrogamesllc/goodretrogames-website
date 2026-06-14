@@ -370,6 +370,49 @@ img { display: block; max-width: 100%; }
 .px.c4 { background: var(--bg-card); border: 1px solid var(--border); opacity: 1; }
 .px.c5 { background: var(--bg-mid); border: 1px solid var(--border); opacity: 1; }
 
+/* --- POLICY / LEGAL PAGES --- */
+.policy { border-bottom: 1px solid var(--border); min-height: 70vh; }
+.policy-inner { max-width: 760px; }
+.policy-title {
+  font-family: var(--font-pixel);
+  font-size: clamp(16px, 2.4vw, 26px);
+  line-height: 1.6;
+  color: var(--white);
+  margin-bottom: 16px;
+}
+.policy-updated {
+  font-size: 13px;
+  color: var(--muted);
+  opacity: 0.7;
+  margin-bottom: 40px;
+}
+.policy-inner h2 {
+  font-family: var(--font-body);
+  font-size: 19px;
+  font-weight: 600;
+  color: var(--green);
+  margin: 40px 0 14px;
+}
+.policy-inner h3 {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--white);
+  margin: 24px 0 10px;
+}
+.policy-inner p { color: var(--muted); margin-bottom: 16px; }
+.policy-inner ul { color: var(--muted); margin: 0 0 16px; padding-left: 22px; }
+.policy-inner li { margin-bottom: 10px; }
+.policy-inner a { color: var(--green); }
+.policy-inner a:hover { text-decoration: underline; }
+.policy-inner strong { color: var(--white); }
+.back-link {
+  display: inline-block;
+  margin-top: 48px;
+  font-size: 14px;
+  color: var(--muted);
+}
+.back-link:hover { color: var(--white); }
+
 /* --- FOOTER --- */
 .site-footer {
   background: var(--bg);
