@@ -283,65 +283,6 @@ body::after {
   flex-wrap: wrap;
 }
 
-/* decorative cartridge */
-.hero-cartridge {
-  position: absolute;
-  right: max(24px, calc(50vw - 550px));
-  top: 50%;
-  transform: translateY(-50%);
-  z-index: 2;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.cartridge-body {
-  width: 140px;
-  height: 180px;
-  background: var(--bg-card);
-  border: 2px solid var(--border);
-  border-radius: 8px 8px 20px 20px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  box-shadow: 0 0 40px rgba(57, 255, 110, 0.08), inset 0 1px 0 rgba(255,255,255,0.05);
-}
-.cartridge-body::before {
-  content: '';
-  position: absolute;
-  bottom: -2px;
-  left: 20px;
-  right: 20px;
-  height: 28px;
-  background: var(--bg);
-  border: 2px solid var(--border);
-  border-top: none;
-  border-radius: 0 0 8px 8px;
-}
-.cartridge-label {
-  width: 90px;
-  height: 100px;
-  background: linear-gradient(135deg, #1e1e28, #2a2a3a);
-  border: 1px solid var(--border);
-  border-radius: 4px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 6px;
-}
-.cart-title {
-  font-family: var(--font-pixel);
-  font-size: 20px;
-  color: var(--green);
-}
-.cart-sub {
-  font-family: var(--font-pixel);
-  font-size: 7px;
-  color: var(--amber);
-  letter-spacing: 0.15em;
-}
-
 /* --- BUTTONS --- */
 .btn {
   display: inline-flex;
@@ -596,7 +537,6 @@ body::after {
 
 /* --- RESPONSIVE --- */
 @media (max-width: 768px) {
-  .hero-cartridge { display: none; }
   .hero-inner { margin-left: 0; padding: 64px 24px; }
   .about-inner { grid-template-columns: 1fr; }
   .about-pixels { display: none; }
