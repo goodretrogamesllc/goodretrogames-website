@@ -404,6 +404,11 @@ img { display: block; max-width: 100%; }
 .policy-inner li { margin-bottom: 10px; }
 .policy-inner a { color: var(--green); }
 .policy-inner a:hover { text-decoration: underline; }
+/* Keep button text legible inside policy/contact pages (overrides the link color above) */
+.policy-inner .btn-primary { color: var(--bg); }
+.policy-inner .btn-secondary { color: var(--amber); }
+.policy-inner .btn-outline { color: var(--white); }
+.policy-inner .btn:hover { text-decoration: none; }
 .policy-inner strong { color: var(--white); }
 .back-link {
   display: inline-block;
