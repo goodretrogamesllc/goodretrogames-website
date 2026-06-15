@@ -16,13 +16,23 @@ The actual store is hosted elsewhere; this site links out to a Square store
 - `index.html` — the landing page (header, hero, categories, about, footer).
 - `returns.html` — Return & Exchange Policy page.
 - `loyalty.html` — Customer Loyalty Program page.
+- `contact.html` — Contact page (see email obfuscation note below).
 - `style.css` — all styling, shared across every page.
 - `CNAME` — custom domain for GitHub Pages (`goodretrogames.com`).
 
 All pages share the same header and footer markup and the same `style.css`. The header
 logo and nav on sub-pages link back to `index.html` (anchors use `index.html#about` etc.).
 The footer link list is duplicated in each page — update all of them together. Policy/legal
-pages use the `.policy` / `.policy-inner` styles.
+and contact pages use the `.policy` / `.policy-inner` styles.
+
+## Contact / email handling
+
+To avoid spam-harvesting crawlers, the business email address is **never written as
+plaintext or a `mailto:` link** in any HTML. All "Contact" / "Get in Touch" links point to
+`contact.html`, where the address is stored reversed (`moc.liamg@...`) and reassembled by
+JavaScript only when the visitor clicks "Show Email Address". If you need to change the
+email, edit the reversed `encoded` string in the inline script at the bottom of
+`contact.html` — do not reintroduce a plaintext `mailto:` anywhere.
 
 ## Deployment
 

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Get in touch with Good Retro Games LLC — questions about orders, trade-ins, returns, or our loyalty program." />
+  <title>Contact — Good Retro Games</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="index.html" class="logo">
+        <span class="logo-gg">GG</span>
+        <span class="logo-text">Good Retro Games</span>
+      </a>
+      <nav class="header-nav">
+        <a href="index.html#about">About</a>
+        <a href="index.html#shop" class="nav-cta">Shop Now</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- CONTACT -->
+  <section class="policy">
+    <div class="section-inner policy-inner">
+      <p class="section-eyebrow">Get in Touch</p>
+      <h1 class="policy-title">Contact Us</h1>
+      <p class="policy-updated">Good Retro Games LLC · Saline, MI</p>
+
+      <p>Questions about an order, a trade-in, returns, or our loyalty program? We'd love to hear from you. Use the button below to email us directly, or reach us through one of our storefronts.</p>
+
+      <h2>Email</h2>
+      <p>Click to reveal our address and open your email app:</p>
+      <p>
+        <a class="btn btn-primary" id="contact-email" href="#" rel="nofollow noopener">Show Email Address</a>
+      </p>
+      <noscript>
+        <p>Please enable JavaScript to view our email address, or reach us through our
+        <a href="https://www.ebay.com/usr/good-retro-games" target="_blank" rel="noopener">eBay store</a>
+        or <a href="https://www.goodgamesretro.com" target="_blank" rel="noopener">Square store</a>.</p>
+      </noscript>
+
+      <h2>Find Us Online</h2>
+      <ul>
+        <li><a href="https://www.goodgamesretro.com" target="_blank" rel="noopener">Square Store</a> — browse and buy our full inventory.</li>
+        <li><a href="https://www.ebay.com/usr/good-retro-games" target="_blank" rel="noopener">eBay</a> — see our current listings.</li>
+      </ul>
+
+      <a href="index.html" class="back-link">← Back to home</a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-logo">
+        <span class="logo-gg">GG</span>
+      </div>
+      <div class="footer-links">
+        <a href="https://www.goodgamesretro.com" target="_blank" rel="noopener">Square Store</a>
+        <a href="https://www.ebay.com/usr/good-retro-games" target="_blank" rel="noopener">eBay</a>
+        <a href="returns.html">Returns</a>
+        <a href="loyalty.html">Loyalty</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <p class="footer-copy">© 2025 Good Retro Games LLC · Saline, MI · All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Email obfuscation: address is stored reversed and reassembled at runtime,
+       so non-JS spam crawlers never see a harvestable plaintext address. -->
+  <script>
+    (function () {
+      var encoded = 'moc.liamg@cllsemagorterdoog';
+      var addr = encoded.split('').reverse().join('');
+      var link = document.getElementById('contact-email');
+      if (!link) return;
+      var revealed = false;
+      link.addEventListener('click', function (e) {
+        if (!revealed) {
+          e.preventDefault();
+          link.href = 'mailto:' + addr;
+          link.textContent = addr;
+          revealed = true;
+        }
+      });
+    })();
+  </script>
+
+</body>
+</html>
