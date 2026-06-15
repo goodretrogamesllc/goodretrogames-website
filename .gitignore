@@ -5,6 +5,10 @@ Good Retro Games LLC-20260614T225344Z-3-001/
 Good Retro Games LLC-20260614T225344Z-3-001.zip
 "Good Retro Games LLC"/
 
+# Raw design assets / source images (large originals). Optimized copies that
+# the site actually uses live in images/ and ARE committed.
+_GoodRetroGamesLLC/
+
 # OS / editor cruft
 .DS_Store
 Thumbs.db

@@ -18,7 +18,17 @@ The actual store is hosted elsewhere; this site links out to a Square store
 - `loyalty.html` — Customer Loyalty Program page.
 - `contact.html` — Contact page (see email obfuscation note below).
 - `style.css` — all styling, shared across every page.
+- `images/` — optimized images used by the site (e.g. `logo.png`, `retro-room.jpg`).
 - `CNAME` — custom domain for GitHub Pages (`goodretrogames.com`).
+
+## Images
+
+Only optimized, web-sized images in `images/` are committed and served. Large raw/source
+art lives in `_GoodRetroGamesLLC/`, which is **gitignored** (keeps the repo lean and keeps
+originals off the public site). When adding a new image, downscale/compress it into
+`images/` rather than committing the original. The header and footer logo is
+`images/logo.png` (neon "Good Retro Games and Collectibles" sign); the About section uses
+`images/retro-room.jpg`.
 
 All pages share the same header and footer markup and the same `style.css`. The header
 logo and nav on sub-pages link back to `index.html` (anchors use `index.html#about` etc.).
